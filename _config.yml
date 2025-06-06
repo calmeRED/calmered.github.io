@@ -1,226 +1,260 @@
-# The Site Configuration
 
-# Import the theme
-theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
-
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
-title: Chirpy # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the subtitle
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
-github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
-
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
-# Web Analytics Settings
-analytics:
-  google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
-
-# Page views settings
-pageviews:
-  provider: # now only supports 'goatcounter'
-
-# Prefer color scheme setting.
+# Welcome to Jekyll!
 #
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 #
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-cdn:
 
-# the avatar on sidebar, support local or CORS resources
-avatar:
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
-toc: true
+## => Site Settings
+##############################
+# theme: jekyll-text-theme # YOU DONT'T NEED THIS LINE
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : https://calmered.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
+permanent_url: https://young-lord.github.io # 目前用于在多域名间共享评论区
+baseurl : "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
+title   : LY 的博客
+title_description: ""
+website_meta_description: "LY 的博客 - 首页"
 
+webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
+  google: n_6Fq4QB6tHtTsvnC9sq_rNbHxNGHpOxccySthREtIY
+  bing: 7352B9B70D905E86EB77F868689762ED
+  baidu: codeva-W6wVZqZpGo
+  baidu2: codeva-U9dHtUK8zI
+
+
+## => Language and Timezone
+##############################
+lang: zh-Hans # the language of your site, default as "en"
+timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+
+
+## => Author and Social
+##############################
+author:
+  type      : person # "person" (default), "organization"
+  name      : LY
+  url       : &github_profile_url https://github.com/Young-Lord
+#  avatar    : https://avatars.githubusercontent.com/Young-Lord # path or url of avatar image (square)
+  bio       : ""
+  email     : ly-niko@qq.com
+  email_url : &mailto_url mailto:ly-niko@qq.com
+  github    : Young-Lord
+
+
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: Young-Lord/Young-Lord.github.io
+repository_tree: master
+
+
+## => Paths
+##############################
+paths: # 注意，这里改了是没有用的，这里只是做一个标识
+  root    : "/"                  # title link url, "/" (default)
+  home    : "/"                  # home layout url, "/" (default)
+  archive : &archive_path "/archive"      # "/archive.html" (default)
+  rss     : &feed_path "/feed.xml"          # rss feed link , "/feed.xml" (default)
+
+feed:
+  path: *feed_path
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
+
+## license
+license: CC-BY-NC-SA-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0", "CC-BY-NC-SA-4.0"
+# 更多自定义可以去改这两个文件：
+# _includes/article/footer/license.html
+# _data/licenses.yml
+
+## TOC（目录）
+toc:
+  selectors: "h1,h2,h3,h4,h5,h6" # "h1,h2,h3" (default)
+
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: true # false (default), true
+mathjax_autoNumber: # false (default), true
+
+## Mermaid
+mermaid: true # false (default), true
+
+## Chart
+chart: true # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /page/:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Sharing
+##############################
+sharing:
+  provider: false # false (default), "addtoany", "addthis", "custom"
+
+## => Comments
+##############################
 comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+  provider: cusdis # false (default), "disqus", "gitalk", "valine", "custom", "cusdis"
+  cusdis:
+    app-id: "f9fae777-b249-44e5-b3b9-c4e6747a54b0"
+    # Change app-id to your own.
+## I use cusdis!
+## Other provider config is removed.
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+## => Pageview
+##############################
+pageview:
+  provider: false # false (default), "leancloud", "custom"
+## I use busuanzi!在侧边栏那里可以配置！
 
-pwa:
-  enabled: true # The option for PWA feature (installable)
-  cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+## => Search
+##############################
+search:
+  provider: default # "default" (default), false, "google", "custom"
 
-paginate: 10
+## => Analytics
+##############################
+analytics:
+  provider: false # false (default), "google", "custom"
+## FUCK GOOGLE!
 
-# The base URL of your site
-baseurl: ""
+## => Copy code to clipboard by https://github.com/kitian616/jekyll-TeXt-theme/pull/218/files
+##############################
+copy_to_clipboard: true
 
-# ------------ The following options are not recommended to be modified ------------------
-
+## => Build
+##############################
+markdown    : kramdown
 kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+  smart_quotes: apos,apos,quot,quot # 禁用自动转全角引号，默认值：lsquo,rsquo,ldquo,rdquo；参考：https://kramdown.gettalong.org/options.html#:~:text=by%3A%20RemoveHtmlTags%20converter-,smart_quotes,-Defines%20the%20HTML
+highlighter : rouge
+permalink   : /posts/:title
 
-collections:
-  tabs:
-    output: true
-    sort_by: order
+exclude:
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
-      layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs # see `site.collections`
-    values:
-      layout: page
-      permalink: /:title/
+      layout: article
+      sharing: false
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: false
+      pageview: true
+      pan_gu_zhi_bai: ture # 中英文自动添加空白
 
-sass:
-  style: compressed
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
+## => Plugins
+##############################
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - "*.config.js"
-  - "package*.json"
+## wu-kan的侧边栏
+body: # 这个用不了，建议直接修改base.html
+  layout-reverse: true # 开启后sidebar在右边，反之左边
+  sidebar-overlay: true # 开启后正文不随sidebar移动而移动
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+sidebar:
+  avatar: # 侧边栏显示的头像
+    enable: false
+    img: /public/image/iconSize600.png # 头像的地址
+    info: <br/>Niko Forever # 头像背后的信息
+  #description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=210 src="//music.163.com/outchain/player?type=0&id=932740311&auto=0&height=430"></iframe>'
+  social:
+  - title: Mail
+    href: *mailto_url
+    class: 'fas fa-envelope'
+  - title: rss
+    href: *feed_path
+    class: 'fas fa-rss'
+  - title: HitGub
+    href: *github_profile_url
+    class: 'fab fa-github'
+  nav:
+  - title: '<i class="fas fa-home fa-fw"></i> 首页'
+    href: /
+  - title: '<i class="fab fa-readme fa-fw"></i> 关于 & 友链'
+    href: /about
+  - title: '<i class="fas fa-archive fa-fw"></i> 归档'
+    href: *archive_path
+  jekyll_table_of_contents:
+    enable: false
+    autoloader: /assets/js/jekyll_table_of_contents.js
+  busuanzi:
+    enable: true
+    page_pv: # 页面访问量
+      alert: <i class="fas fa-eye fa-fw"></i>
+      unit: 次
+    site_pv: # 站点访问量
+      alert: <i class="fas fa-paw fa-fw"></i>
+      unit: 枚
+    site_uv: # 访客量
+      alert: <i class="fas fa-user-friends fa-fw"></i>
+      unit: 人
+  last_edit:
+    enable: true
+    alert: <i class="fas fa-user-edit fa-fw"></i>
+  run_time:
+    enable: true
+    src: /assets/js/run_time.js
+    start_time: '10/27/2019 11:32:12' # 这是我博客上线的时间
+    alert: <i class="fas fa-cog fa-spin fa-fw"></i>
+    day: 天
+    hour: 时
+    minute: 分
+    second: 秒
+  moe_icp:
+    enable: true
+    text: '<a href="https://icp.gov.moe/?keyword=20213444" target="_blank">萌ICP备20213444号</a>'
+  copyright:
+    enable: false
+    text: '<script async defer src="https://buttons.github.io/buttons.js"></script><a class="github-button" aria-label="Star Young-Lord/Young-Lord.github.io on GitHub" href="https://github.com/Young-Lord/Young-Lord.github.io" data-icon="octicon-star" data-show-count="true">Star</a>'
