@@ -16,7 +16,7 @@ timezone: Asia/Beijing
 
 title: 网坛宝典 # the main title
 
-tagline: “从新手到宗师的球道修炼书” 致力于让群众能快速上手网球的博客 # it will display as the subtitle
+tagline: “从新手到宗师的球道修炼书” 致力于让群众快速上手网球 # it will display as the subtitle
 
 # description: >- # used by seo meta and the atom feed
   # A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -99,6 +99,9 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
+    enable: false
+    # img: /public/image/iconSize600.png # 头像的地址
+    # info: <br/>Niko Forever # 头像背后的信息
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -109,8 +112,10 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider:  # [disqus | utterances | giscus]cusdis
   # The provider options are as follows:
+  cusdis:
+    app-id: # "f9fae777-b249-44e5-b3b9-c4e6747a54b0"
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
