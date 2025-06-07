@@ -1,4 +1,3 @@
-# j
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
@@ -9,3 +8,7 @@
 ## 注意事项
 - 由于插入大量商业性质的广告，CSDN 与简书被认为违反了“非商业性使用”原则，因此博客内的文章严禁转载至 CSDN 或简书，无论是否署名。
 
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
+[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
+[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
